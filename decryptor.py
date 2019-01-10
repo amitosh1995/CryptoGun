@@ -1,4 +1,4 @@
-path_input = r'D:\Projects\PycharmProjects\CryptoGun\sample result.txt'
+path_input = r'F:\Google Drive\Other Documents\Encrypted Passkey.txt'
 file_input = open(path_input,"r")
 str = file_input.read()
 char_list = [ord(c) for c in str]

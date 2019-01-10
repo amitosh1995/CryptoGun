@@ -12,15 +12,15 @@ def input_editor():
 
 
 path_raw = r'D:\Projects\PycharmProjects\CryptoGun\Generator.txt'
-path_output = r'D:\Projects\PycharmProjects\CryptoGun\Encrypted Passkey.txt'
-file_raw = open(path_raw, "w")
+path_output = r'F:\Google Drive\Other Documents\Encrypted Passkey.txt'
+file_raw = open(path_raw, "a+")
 file_output = open(path_output,"a+")
 looper = input("Enter input (Y/N):- ")
 while(looper.lower() == 'y'):
     input_editor()
     looper = input("Enter Again (Y/N):- ")
 file_raw.seek(0,0)
-str_list = [ c for c in file_raw.read()]
+str_list = [c for c in file_raw.read()]
 char_list = [ord(c) for c in str_list]
 new_list = []
 for c in char_list:
